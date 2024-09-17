@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.2">
+  <meta charset="utf-8">
+  <meta name="description"
+        content="UniMODE">
+  <meta name="keywords" content="3D Object Detection">
+  <title>UniMODE</title>
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<style>
+  video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            <img src="./static/images/logo.png" alt="图标描述" style="width: 40; height: 73px; vertical-align: middle; margin-right: 0px; position: relative; top: -8px;">
+            Towards Unified 3D Object Detection via Algorithm and Data Unification
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://lizhuoling.github.io/">Zhuoling Li</a><sup>1</sup></a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              <a href="https://xuxiaogang.com/">Xiaogang Xu</a><sup>2</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=HX0BfLYAAAAJ">Ser-Nam Lim</a><sup>3</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://hszhao.github.io/">Hengshuang Zhao</a><sup>1</sup></a>&nbsp</a>&nbsp    
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Hong Kong</a>&nbsp</a>&nbsp  </span>
+            <span class="author-block"><sup>2</sup>The Chinese University of Hong Kong</a>&nbsp</a>&nbsp  </span>
+            <span class="author-block"><sup>3</sup>University of Central Florida  </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- To Do: Replace this paper link. -->
+              <span class="link-block">
+                <a href=   "https://arxiv.org/abs/2312.02928" 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>CVPR Paper</span>
+                </a>
+              </span>
+              <!-- To Do: Replace this paper link. -->
+              <span class="link-block">
+                <a href=   "https://arxiv.org/abs/2312.02928" 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Journal Paper</span>
+                </a>
+              </span>
+              <!-- To Do: Replace this demo link. -->
+              <span class="link-block">
+                <a href="https://github.com/XavierCHEN34/LivePhoto"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Data</span>
+                </a>
+              </span>
+              <!-- To Do: Replace this dataset link. -->
+              <span class="link-block">
+                <a href="https://github.com/XavierCHEN34/LivePhoto"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"  style="margin-top: 0; padding-top: 30px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center;">Introduction to UniMODE</h2>
+        <video poster="" id="ade" autoplay controls muted loop playsinline height="10%">
+          <source src="./video/UniMODE_CVPR2024_video.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"  style="margin-top: 0; padding-top: 30px;">
+  <div style="background-color: #f5f5f5;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3" style="text-align: center;">Introduction to MM-UniMODE</h2>
+          <div class="center-text">
+            &nbsp;&nbsp;&nbsp;&nbsp; To study the unified multi-modal detection problem, we build the first corresponding benchmark MM-Omni3D and develop the detector MM-UniMODE.
+          </div>
+          <video poster="" id="ade" autoplay controls muted loop playsinline class="center" width="100%" height="auto">
+            <source src="./video/MM-UniMODE_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; Realizing unified 3D object detection, including both indoor and outdoor scenes, holds great importance in applications like 
+            robot navigation. However, involving various scenarios of data to train models poses challenges due to their significantly distinct characteristics, e.g., 
+            diverse geometry properties and heterogeneous domain distributions. In this work, we propose to address the challenges from two perspectives, the algorithm 
+            perspective and data perspective. In terms of the algorithm perspective, we first build a monocular 3D object detector based on the bird's-eye-view (BEV) 
+            detection paradigm, where the explicit feature projection is beneficial to addressing the geometry learning ambiguity. In this detector, we split the 
+            classical BEV detection architecture into two stages and propose an uneven BEV grid design to handle the convergence instability caused by geometry difference
+            between scenarios. Besides, we develop a sparse BEV feature projection strategy to reduce the computational cost and a unified domain alignment method to 
+            handle heterogeneous domains. From the data perspective, we propose to incorporate depth information to improve training robustness. Specifically, we build 
+            the first unified multi-modal 3D object detection benchmark MM-Omni3D and extend the aforementioned monocular detector to its multi-modal version, which is 
+            the first unified multi-modal 3D object detector. We name the designed monocular and multi-modal detectors as UniMODE and MM-UniMODE, respectively. The 
+            experimental results reveal several insightful findings highlighting the benefits of multi-modal data and confirm the effectiveness of all the proposed 
+            strategies. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div style="background-color: #f5f5f5;">
+    <div class="container is-max-desktop" style="max-width: none;">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3" style="text-align: center;">UniMODE Pipeline</h2>
+          <div class="content has-text-justified">
+          </div>
+          <img src="./static/images/UniMODE_Pipeline.png" alt="pipeline" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div style="background-color: #ffffff;">
+    <div class="container is-max-desktop" style="max-width: none;">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3" style="text-align: center;">MM-UniMODE Pipeline</h2>
+          <div class="content has-text-justified">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+          </div>
+          <div class="image-area">
+            <img src="./static/images/MM_Pipeline.png" alt="pipeline" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- To Do: Replace the arxiv paper description. -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{li2024unimode,
+      title={UniMODE: Unified Monocular 3D Object Detection},
+      author={Li, Zhuoling and Xu, Xiaogang and Lim, SerNam and Zhao, Hengshuang},
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+      pages={16561--16570},
+      year={2024}
+    }</code></pre>
+    <pre><code>@article{li2024towards,
+      title={Towards Unified 3D Object Detection via Algorithm and Data Unification},
+      author={Zhuoling, Li and Xiaogang, Xu and Ser-Nam, Lim and Hengshuang, Zhao},
+      journal={xxx},
+      year={2024}
+    }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="content">
+        <p>
+          The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
