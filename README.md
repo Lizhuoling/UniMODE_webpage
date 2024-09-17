@@ -14,7 +14,7 @@ If you find UniMODE and MM-UniMODE useful for your work please cite:
     
 @article{li2024towards,
       title={Towards Unified 3D Object Detection via Algorithm and Data Unification},
-      author={Zhuoling, Li and Xiaogang, Xu and Ser-Nam, Lim and Hengshuang, Zhao},
+      author={Li, Zhuoling and Xu, Xiaogang and Lim, Ser-Nam and Zhao, Hengshuang},
       journal={xxx},
       year={2024}
 }
